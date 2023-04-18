@@ -1,0 +1,69 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="date,nepal,time">
+		<meta name="author" content="Lalit Rajbanshi">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.jsdelivr.net/npm/nepali-date-converter/dist/nepali-date-converter.umd.js"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="footer.css">
+		
+		<title>Nepali Date</title>
+	</head>
+	<body>
+		<nav class="navbar bg-body-tertiary">
+			<div class="container-fluid">
+				<div id="quote"></div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="time-container">
+				<div class="hours">
+					<span id="hours">12</span><br>
+					<span>hours</span>
+				</div>
+				<div class="minutes">
+					<span id="minutes">12</span><br>
+					<span>minutes</span>
+				</div>
+				<div class="seconds">
+					<span id="seconds">12</span><br>
+					<span>seconds</span>
+				</div>
+				<div class="am-pm" id="am-pm">am</div>
+				<div class="date">
+					<span id="week">Sunday</span><i>,</i>
+					<span id="month">Baishak</span><i>-</i>
+					<span id="day">14</span><i>,</i>
+					<span id="year">2080</span>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="social-links">
+				<a href="https://www.facebook.com/lalit.rajbanshi.3158"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.instagram.com/lalitrajbanshi_"><i class="fa fa-instagram"></i></a>
+				<a href="https://www.linkedin.com/in/lalit-rajbanshi-490837265/"><i class="fa fa-linkedin"></i></a>
+				<a href="https://www.github.com/Zack1o1"><i class="fa fa-github"></i></a>
+				<p>&copy; Lalit Rajbanshi <span id="current-year">2023</span><br>Nepal</p>
+			</div>
+		</footer>
+		<div class="bubble"></div>
+
+		<script src="main.js"></script>
+		<script src="quote.js"></script>
+		<script>
+			
+			function quotes(){
+				let quote_show = document.getElementById('quote')
+				quote_show.innerHTML = quote[Math.floor(Math.random() * 50)].h
+			}
+			quotes()
+			setInterval(quotes, 10000)
+		</script>
+	</body>
+	</html>

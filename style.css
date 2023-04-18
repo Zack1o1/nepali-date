@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+background-color:#413543;
+}
+/* =========================== time and date================ */
+.time-container{
+    display: grid;
+    justify-content: center; 
+    grid-gap: 7px;
+    margin-top: 90px;
+    text-align: center; 
+}
+.date{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-top: 10px;
+    background-color: #F0EB8D !important;
+    font-size: 2.7rem;
+    font-family: fantasy;
+}
+.time-container > div{
+    border: 1px solid black;
+    padding: 20px;
+    background-color: #F0EB8D;
+    color:#2D2727;
+    border-radius: 50px;
+    height: 118px;
+    box-shadow:1px 10px 8px 1px #002B5B;
+}
+.time-container > div:nth-child(-n+4){
+    width: 200px;
+}
+#hours,#minutes,#seconds{
+    font-size: 3rem;
+    font-weight: bold;
+}
+#am-pm{
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 33px;
+}
+.hours > span{
+    font-weight: normal;
+    font-size: 1rem;
+}
+.minutes > span{
+    font-weight: normal;
+    font-size: 1rem;
+}
+.seconds > span{
+    font-weight: normal;
+    font-size: 1rem;
+}
+.date > span{
+    padding: 5px;
+}
+.red_color{
+  
+    color: rgba(138, 43, 43, 0.986) !important;
+}
+/* ===================== for navbar ======================= */
+.navbar{
+        background-color: #8F43EE !important;
+        font-weight: bold !important;
+        height: 6.6rem;
+}
+.navbar-brand{
+        color: #DFFFD8 !important;
+}
+.navbar > div{
+        border: 1px solid #DFFFD8;
+        background-color: #DFFFD8 !important;
+        color: #8F43EE !important;
+        padding: 15px;
+        border-radius: 20px;
+        font-size: 1rem;
+        width: fit-content;
+        
+}
+    /* ===================== devices < 800 ============== */
+@media (max-width: 800px){
+    .time-container{
+        padding: 0px !important;
+        margin-top: 20px !important;
+    }
+    .time-container > div:nth-child(-n+4){
+    width: 200px;
+    margin-left: 50px;
+    }
+    .date{
+        height: 145px !important;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        width: 300px;
+    }
+    .date > span{
+        font-size: 1.8rem;
+    }
+    #hours,#minutes,#seconds{
+    font-size: 2rem;
+    font-weight: bold;
+    }
+    
+}
+/* ================== devices < 500=============== */
+@media (max-width:500px) {
+    .navbar > div{
+        font-size: .7rem;
+        inline-size: 300px;
+        word-break: break-all;
+        overflow-wrap: break-word;
+    }
+    .navbar-brand > span:nth-child(2){
+        padding: 20px;
+        font-size: 1rem;
+        
+    }
+}

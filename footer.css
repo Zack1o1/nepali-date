@@ -1,0 +1,34 @@
+ /* =====================for footer============= */
+        footer {
+                color: #F0EB8D;
+                font-family: 'Roboto Condensed', sans-serif;
+                padding-top: 63px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .social-links a {
+                color: #F0EB8D;
+                font-size: 24px;
+                margin-right: 20px;
+                transition: all 0.3s ease-in-out;
+            }
+            .social-links a:hover {
+                color: #d62121;
+                transform: scale(1.2);
+            }
+            .social-links {
+                font-size: 16px;
+                font-weight: 400;
+                text-align: center;
+                width: 100%;
+            }
+            #current-year {
+                font-weight: 600;
+            }
+            #current-year:hover {
+                color: #d62121;
+                transform: rotate(360deg);
+                transition: all 0.5s ease-in-out;
+            }        
